@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Number to Words</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const number = document.getElementById("numberInput").value;
+            alert(`You entered: ${number}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Convert Number to Words</h1>
+    <form id="numberForm" onsubmit="handleSubmit(event)">
+        <label for="numberInput">Enter a Number:</label>
+        <input type="text" id="numberInput" name="number" placeholder="Enter a number" required>
+        <button type="submit">Convert</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
